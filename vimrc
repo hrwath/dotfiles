@@ -9,6 +9,7 @@ Bundle 'xoria256.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'rking/ag.vim'
 
 set ruler         " show the cursor position all the time
 set showcmd       " show incomplete command
