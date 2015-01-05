@@ -5,7 +5,7 @@ call vundle#rc()
 " install running :BundleInstall
 Bundle 'gmarik/Vundle.vim'
 Bundle 'tpope/vim-fugitive'
-Bundle 'xoria256.vim'
+Bundle 'chriskempson/base16-vim'
 Bundle 'tpope/vim-rails'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
@@ -24,7 +24,9 @@ filetype indent on
 filetype plugin on
 syntax on
 
-colorscheme xoria256
+let base16colorspace=256
+colorscheme base16-railscasts
+set background=dark
 
 " backspace deletes like most programs in insert mode
 set backspace=2
