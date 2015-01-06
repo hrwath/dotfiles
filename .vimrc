@@ -50,6 +50,9 @@ noremap <C-K> <C-W><C-K>
 noremap <C-L> <C-W><C-L>
 noremap <C-H> <C-W><C-H>
 
+" Escape key is so far away...
+inoremap jj <ESC>
+
 " line numbers
 set number
 
