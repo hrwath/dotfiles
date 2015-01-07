@@ -12,31 +12,34 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'rking/ag.vim'
 
-set ruler         " show the cursor position all the time
-set showcmd       " show incomplete command
-set laststatus=2  " always display the status line
-
-" show ruler for 80 columns
-set textwidth=80
-set colorcolumn=+1
-
 filetype on
 filetype indent on
 filetype plugin on
 syntax on
 
+set nocompatible  " disable Vi compatibility
+set autoindent
+set backspace=2
+set colorcolumn=+1
+set cursorline    " hilight current line
+set expandtab
+set foldlevel=2   " max nested folds
+set foldmethod=syntax " folding based on syntax
+set incsearch     " incremental search
+set list
+set lcs=eol:¬,tab:»·,trail:·
+set nofoldenable  " open unfolded files
+set number        " line numbers
+set ruler         " show the cursor position all the time
+set showcmd       " show incomplete command
+set laststatus=2  " always display the status line
+set shiftwidth=2
+set softtabstop=2
+set textwidth=80  " show ruler for 80 columns
+
 let base16colorspace=256
 colorscheme base16-railscasts
 set background=dark
-
-" backspace deletes like most programs in insert mode
-set backspace=2
-
-set nocompatible
-set expandtab
-set shiftwidth=2
-set softtabstop=2
-set autoindent
 
 " no more easy way
 noremap <Left> <Nop>
@@ -53,24 +56,9 @@ noremap <C-H> <C-W><C-H>
 " Escape key is so far away...
 inoremap jj <ESC>
 
-" line numbers
-set number
-
-" hilight current line
-set cursorline
-
-" incremental search
-set incsearch
-
-" show EOLs, tabs and trailing spaces
-set list
-set lcs=eol:¬,tab:»·,trail:·
+" hilight EOLs, tabs and trailing spaces
 hi NonText term=bold ctermfg=8
 
-" setup folding
-set foldmethod=syntax " folding based on syntax
-set nofoldenable " open unfolded files
-set foldlevel=2 " max nested folds
 " map Space to open/close fold
 map <Space> za
 
