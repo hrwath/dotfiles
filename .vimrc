@@ -64,3 +64,9 @@ map <Space> za
 
 " shortcut for NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" show .dotfiles in NERDTree
+let NERDTreeShowHidden=1
+
+" search for .dotfiles with CtrlP
+let g:ctrlp_show_hidden = 1
