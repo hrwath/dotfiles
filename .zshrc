@@ -52,10 +52,18 @@ plugins=(git rails ruby)
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/pawel/.rvm/bin:/usr/local/opt/php55/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Phing¬
+export PHING_HOME=$(brew --prefix php55)/bin¬
+export PHP_CLASSPATH=${PHING_HOME}/classes¬
+export PATH=${PATH}:${PHING_HOME}
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# GitHub token for Homebrew¬
+export HOMEBREW_GITHUB_API_TOKEN=1820724e7549f091893b62a6681d84fea9994b7c
 
 source $ZSH/oh-my-zsh.sh
 source ~/.git-prompt.sh
@@ -92,3 +100,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ra="sudo apachectl restart"
+alias sz="source ~/.zshrc"
+alias vv="vim ~/.vimrc"
+alias vz="vim ~/.zshrc"
