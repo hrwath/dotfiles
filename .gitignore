@@ -17,6 +17,7 @@
 .gitconfig
 .heroku
 .hgignore_global
+.htoprc
 .irb-history
 .irbrc
 .keepassx
@@ -38,7 +39,7 @@
 .vagrant.d
 .vim
 .viminfo
-.zcompdump
+.zcompdump*
 .zlogin
 .zsh-update
 .zsh_history
