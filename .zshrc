@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="hrwath"
+ZSH_THEME="cobalt2"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,7 +45,7 @@ ZSH_THEME="hrwath"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby)
+plugins=(git)
 
 # User configuration
 
@@ -103,6 +103,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ra="sudo apachectl restart"
+alias rd="~/work/reset-database-mm7_api.sh &"
 alias sz="source ~/.zshrc"
 alias vv="vim ~/.vimrc"
 alias vz="vim ~/.zshrc"
