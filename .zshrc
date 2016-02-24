@@ -107,5 +107,7 @@ alias rd="~/work/reset-database-mm7_api.sh &"
 alias sz="source ~/.zshrc"
 alias vv="vim ~/.vimrc"
 alias vz="vim ~/.zshrc"
+alias jsonparse="python -m json.tool"
+alias phing7='PATH="$(brew --prefix php70)/bin:${PATH}" phing'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
