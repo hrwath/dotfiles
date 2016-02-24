@@ -11,6 +11,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'rking/ag.vim'
+Plugin 'ekalinin/Dockerfile.vim'
 
 filetype on
 filetype indent on
