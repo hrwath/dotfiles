@@ -49,20 +49,8 @@ plugins=(git docker)
 
 # User configuration
 
-export PATH="${PATH}:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/pawel/.rvm/bin:/usr/local/opt/php55/bin"
+export PATH="${PATH}:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-# Phing¬
-export PHING_HOME=$(brew --prefix php55)/bin¬
-export PHP_CLASSPATH=${PHING_HOME}/classes¬
-export PATH=${PATH}:${PHING_HOME}
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# Scala
-export SCALA_HOME="/Library/Scala/scala-2.11.5"
-export PATH="${PATH}:${SCALA_HOME}/bin"
 
 # GitHub token for Homebrew¬
 export HOMEBREW_GITHUB_API_TOKEN=1820724e7549f091893b62a6681d84fea9994b7c
